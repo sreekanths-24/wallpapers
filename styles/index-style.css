@@ -1,0 +1,238 @@
+/*==========defaults===================*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Kanit', sans-serif;;
+}
+
+section, footer{
+    width: 100%;
+    height: 100vh;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+li{
+    list-style: none;
+}
+
+/* =============== grids =====================*/
+
+main{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto;
+    grid-template-areas: 
+        "home"
+        "w0"
+        "w1"
+        "w2"
+        "w3"
+        "w4"
+        "w5"
+        "w6"
+        "w7"
+        "w8"
+        "w9";
+}
+
+/*================home================*/
+#home{
+    grid-area: home;
+    background-image: linear-gradient(aquamarine, #009B77);
+    text-align: center;
+    padding: 40px 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas: 
+        "text"
+        "button";
+}
+
+#home #block-1{
+    grid-area: text;
+    width: 100%;
+    
+}
+#home #block-2{
+    grid-area: button;
+    width: 100%;
+    display: flex;
+    text-align:center;
+    justify-content: center;
+}
+
+#home h1{
+    font-size: 50px;
+}
+
+#home p{
+    margin-top: 20px;
+    font-size: 25px;
+}
+
+#home #c-button{
+    border-radius: 30px;
+    width: 60%;
+    height: 60px;
+    padding: 10px 20px;
+    background-color: aquamarine;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+}
+#home a{
+    width: 100%;
+    height: 100%;
+    font-size: 25px;
+}
+
+
+/*===============w0====================*/
+#w0{
+    grid-area: w0;
+    background-image: url(../wallpapers/w0.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/*===============w1====================*/
+#w1{
+    grid-area: w1;
+    background-image: url(../wallpapers/w1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/*===============w2====================*/
+#w2{
+    grid-area: w2;
+    background-image: url(../wallpapers/w2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/*===============w3====================*/
+#w3{
+    grid-area: w3;
+    background-image: url(../wallpapers/w3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/*===============w4====================*/
+#w4{
+    grid-area: w4;
+    background-image: url(../wallpapers/w4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/*===============w5====================*/
+#w5{
+    grid-area: w5;
+    background-image: url(../wallpapers/w5.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/*===============w6====================*/
+#w6{
+    grid-area: w6;
+    background-image: url(../wallpapers/w6.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/*===============w7====================*/
+#w7{
+    grid-area: w7;
+    background-image: url(../wallpapers/w7.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/*===============w8====================*/
+#w8{
+    grid-area: w8;
+    background-image: url(../wallpapers/w8.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/*===============w9====================*/
+#w9{
+    grid-area: w9;
+    background-image: url(../wallpapers/w9.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/*========= FOOTER ====================*/
+footer{
+    background-image: linear-gradient(#DD4124,  #BC243C);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+        "quick-links"
+        "dowloads"
+        "social";
+}
+
+footer #quick-links{
+    grid-area: quick-links;
+    display: grid;
+    background-color: aliceblue;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas: 
+        "heading heading"
+        "l1 l2";
+}
+
+footer #quick-links #heading{
+    grid-area: heading;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer #quick-links #link1{
+    grid-area: l1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer #quick-links #link2{
+    grid-area: l2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer li{
+    font-size: 22px;
+}
+
+footer #downloads{
+    grid-area: downloads;
+}
+
+footer #media{
+    grid-area: media;
+}
