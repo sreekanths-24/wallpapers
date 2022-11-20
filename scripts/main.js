@@ -7,3 +7,13 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         });
     });
 });
+
+//scroll reveal
+ScrollReveal().reveal(".cards",{
+    interval: 200,
+    easing: 'ease-out',
+    reset: true ,
+    duration: 400,
+    distance: "80px",
+    origin: "top"
+});
