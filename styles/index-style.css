@@ -5,8 +5,11 @@
     box-sizing: border-box;
     font-family:'Kanit', sans-serif;;
 }
-
-section, footer{
+/* footer{
+    width: 100%;
+    height: auto;
+} */
+section,footer{
     width: 100%;
     height: 100vh;
 }
@@ -62,9 +65,8 @@ main{
 #home #block-2{
     grid-area: button;
     width: 100%;
-    display: flex;
-    text-align:center;
-    justify-content: center;
+    padding: 30px 20px;
+    text-align: center;
 }
 
 #home h1{
@@ -76,15 +78,20 @@ main{
     font-size: 25px;
 }
 
-#home #c-button{
+#home .c-button{
+    margin: 30px auto;
+    text-align: center;
     border-radius: 30px;
-    width: 60%;
+    width: fit-content;
     height: 60px;
     padding: 10px 20px;
     background-color: aquamarine;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    
 }
+/* 
+#home #btn1{
+    grid-area: b1;
+} */
 #home a{
     width: 100%;
     height: 100%;
@@ -186,53 +193,69 @@ main{
 footer{
     background-image: linear-gradient(#DD4124,  #BC243C);
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto;
-    grid-template-areas: 
-        "quick-links"
-        "dowloads"
-        "social";
-}
-
-footer #quick-links{
-    grid-area: quick-links;
-    display: grid;
-    background-color: aliceblue;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto;
+    grid-template-rows: auto auto auto auto auto auto;
     grid-template-areas: 
-        "heading heading"
-        "l1 l2";
+        "h1 h1"
+        "l1 l2"
+        "h2 h2"
+        "l3 l4"
+        "h3 h3"
+        "m m";
 }
 
-footer #quick-links #heading{
-    grid-area: heading;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+footer #heading{
+    grid-area: h1;
+    padding: 10px 20px;
+    text-align: center;
+} 
 
-footer #quick-links #link1{
+footer #link1{
     grid-area: l1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    padding: 10px 20px;
+    text-align: center;
 }
-footer #quick-links #link2{
+
+footer #link2{
     grid-area: l2;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    padding: 10px 20px;
+    text-align: center;
+}
+footer #download-heading{
+    grid-area: h2;
+    padding: 10px 20px;
+    text-align: center;
+} 
+
+footer #link3{
+    grid-area: l3;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+footer #link4{
+    grid-area: l4;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+footer #contact-heading{
+    grid-area: h3;
+    padding: 10px 20px;
+    text-align: center;
+} 
+
+footer #social-links{
+    grid-area: m;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+footer #social-links i{
+    font-size: 40px;
+    margin: 5px 10px;
 }
 
 footer li{
     font-size: 22px;
-}
-
-footer #downloads{
-    grid-area: downloads;
-}
-
-footer #media{
-    grid-area: media;
 }
